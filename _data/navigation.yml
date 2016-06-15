@@ -1,16 +1,18 @@
 # main links links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/
+    url: /
 
-  - title: "Sample Posts"
-    url: https://mmistakes.github.io/minimal-mistakes/year-archive/
+  - title: "Documentation"
+    url: /docs
 
-  - title: "Sample Pages"
-    url: https://mmistakes.github.io/minimal-mistakes/page-archive/
+  - title: "Projects"
+    url: /projects
+#    - One Degree Imager
+#    - IU Electro Microscopy Center
+#    - Globyalr Cluster Systems
+#    - IU Radiology Portal
+#    - Hubneuro protype (neuroscience)
 
-  - title: "Sample Collections"
-    url: https://mmistakes.github.io/minimal-mistakes/collection-archive/
+  - title: "Contact"
+    url: /contact/
