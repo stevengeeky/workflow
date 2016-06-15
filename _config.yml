@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "SCA Home"
+title                    : "SCA"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Scalable Computing Archive"
+description              : "SCA Homepage."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -146,6 +146,21 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:        
+      layout: single
+      author_profile: false
+      sidebar:
+        nav: "docs"
 
 # Outputting
 permalink: /:categories/:title/
