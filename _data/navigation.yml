@@ -8,11 +8,16 @@ main:
 
   - title: "Projects"
     url: /projects
-#    - One Degree Imager
-#    - IU Electro Microscopy Center
-#    - Globyalr Cluster Systems
-#    - IU Radiology Portal
-#    - Hubneuro protype (neuroscience)
+    subitems: 
+    - title: One Degree Imager
+      url: https://portal.odi.iu.edu
+    - title: IU Electro Microscopy Center
+    - title: Globular Cluster Systems
+    - title: IU Radiology QC
+    - title: Hubneuro (Neuroscience - prototype))
+
+  - title: "Publications"
+    url: /publications
 
   - title: "Contact"
     url: /contact/
