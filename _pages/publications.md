@@ -13,7 +13,13 @@ List of papers, posters, etc. about Trident software suite based Scalable Comput
 **1.** Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R. 2016. Trident: Scalable Compute Archives, and Visualuzation/Analysiss Systems <em>In Process.</em> SPIE xyz TBD, article number TBD
  - Online Abstract, Full Paper [PDF - coming soon]
 
-**2.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X <em>In Process.</em> SPIE xyz TBD, article number TBD
+**2.** Young, M.D.; et al. Star Dock 
+ - Online Abstract, Full Paper [PDF - coming soon]
+
+**3.** Kotulla, R.; et al. RabbitQR
+ - Online Abstract, Full Paper [PDF - coming soon]
+
+**4.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X <em>In Process.</em> SPIE xyz TBD, article number TBD
  - Online Abstract, Full Paper [PDF - coming soon]
 
 ## One Degree Imager - Pipeline, Portal, and Archive
