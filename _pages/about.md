@@ -1,9 +1,8 @@
 ---
-title: "Page Not Found"
+title: "About SCA"
 layout: single
-excerpt: "Page not found. Your pixels are in another canvas."
+excerpt: "This page describes the SCA project."
 sitemap: false
-permalink: /404.html
+permalink: /about.html
 ---
-
 Home here
