@@ -8,7 +8,7 @@ permalink: /publications
 
 {% include base_path %}
 
-List of papers, posters, etc. about Trident software suite based Scalable Compute Archive and Analysis Systems including the ODI-Pipeline, Portal, and Archive.
+List of papers, posters, etc. about Trident software suite based Scalable Compute Archive and Analysis Systems including the ODI Portal, Pipeline, and Archive.
 
 **1.**  Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R.; Henschel, R. 2016. Trident: Scalable Compute Archive, and Visualuzation/Analysiss Systems. <em>In Process.</em>. Proc. SPIE 9913-53, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
 
