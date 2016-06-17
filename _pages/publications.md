@@ -10,19 +10,23 @@ permalink: /publications
 
 List of papers, posters, etc. about Trident software suite based Scalable Compute Archive and Analysis Systems including the ODI-Pipeline, Portal, and Archive.
 
-**1.** Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R. 2016. Trident: Scalable Compute Archives, and Visualuzation/Analysiss Systems <em>In Process.</em> SPIE xyz TBD, article number TBD
+**1.**  Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R.; Henschel, R. 2016. Trident: Scalable Compute Archive, and Visualuzation/Analysiss Systems. <em>In Process.</em>. Proc. SPIE 9913-53, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
+
  - Online Abstract, Full Paper [PDF - coming soon]
 
-**2.** Young, M.D.; et al. Star Dock 
+**2.**  Young, M.D.; Hayashi, S.; Gopu, A.; Kotulla, R.; 2016. StarDock: shipping customized computing environments to the data. <em>In Process.</em>. Proc. SPIE 9913-44, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
+
  - Online Abstract, Full Paper [PDF - coming soon]
 
-**3.** Kotulla, R.; et al. RabbitQR
+**3.**  Kotulla, R.; Gopu, A.; Hayashi, S.; 2016. Fast and flexible big data processing at LSST data rates using existing, shared-use hardware. <em>In Process.</em>. Proc. SPIE 9913-67, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
+
  - Online Abstract, Full Paper [PDF - coming soon]
 
-**4.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X <em>In Process.</em> SPIE xyz TBD, article number TBD
+**4.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X: new and improved image explorer for astronomical images and beyond. <em>In Process.</em>. Proc. SPIE 9913-169, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
+
  - Online Abstract, Full Paper [PDF - coming soon]
 
-## One Degree Imager - Pipeline, Portal, and Archive
+## One Degree Imager - Portal, Pipeline, and Archive
 
 **1.** Hayashi, S.; Gopu, A.; Young, M. D.; Kotulla, R. 2014. PPA Stack: User Driven Image Stacking for ODI data and beyond via a Highly Customizable Web Interface. <em>In Process.</em> Proceedings of The Astronomical Society of the Pacific (ASP) TBD, article number TBD
 
