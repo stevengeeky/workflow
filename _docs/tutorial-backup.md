@@ -285,7 +285,33 @@ You can also create your own progress UI by polling progress detail from followi
 Instead of polling, you can also receive realtime progress update via socket.io (progress service's default UI uses this)
 Please see document on progress service for more detail.
 
-**Step 5:** Debugging / Development
+**Step 5:** Putting it all together
+
+How to put all these pieces together is somewhat outside of the scope of this document (it depends on where you are running it,
+what framework / language you are using, etc), but at minimum, you will need to do something like following to submit the workflow.
+
+```javascript
+
+get_resources(function(err, sda_resource, karst_resource) {
+    if(err) throw err;
+
+    if(!karst_resource) throw new Error("couldn't find karst resource");
+    if(!sda_resource) throw new Error("couldn't find sda resource");
+
+    submit_tar(karst_resource, function(err, tar_task) {
+        if(err) throw err;
+
+        submit_hpss(karst_resource, sda_resource, tar_task, function(err, hpss_task) {
+            if(err) throw err;
+            
+            //monitor task / progress status
+        });
+    });
+});
+
+```
+
+**Debugging / Development***
 
 ## Rerunning a task
 
