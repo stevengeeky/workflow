@@ -11,8 +11,8 @@ push it to HPSS.
 
 Prerequisites
 
-* SCA Authentication JWT
-* SCA Instance ID to store your tasks
+* SCA Authentication JWT (see login page)
+* SCA Instance ID to store your tasks (see instance page)
 
 TODO: Add links to fulfill these..
 
@@ -32,7 +32,7 @@ var jwt = fs.readFileSync('/home/hayashis/.sca/keys/cli.jwt', {encoding: 'ascii'
 
 function get_resources(cb) {
     request.get({
-        url: sca+"/sca/resource",
+        url: sca+"/wf/resource",
         json: true,
         headers: { 'Authorization': 'Bearer '+jwt },
         qs: {
@@ -53,7 +53,6 @@ function get_resources(cb) {
         cb(null, sda_resource, karst_resource);
     });
 }
-
 ```
 
 **Step 2:** Submit sca-product-raw/tar request
@@ -61,10 +60,9 @@ function get_resources(cb) {
 Now that we know user's SDA/karst resource, we can submit a request to tar up the directory.
 
 ```javascript
-
 function submit_tar(sda_resource, src_dir, cb) {
     request.post({
-        url: sca+"/sca/task",
+        url: sca+"/wf/task",
         json: true,
         headers: { 'Authorization': 'Bearer '+jwt },
         body: {
@@ -83,7 +81,6 @@ function submit_tar(sda_resource, src_dir, cb) {
         cb(null, body.task);
     });
 }
-
 ```
 
 preferred_resource_id is optional, but if user has more than 1 resource that can run sca-product-raw service, 
@@ -120,7 +117,7 @@ Submitting hpss task is bit more complicated.
 ```javascript
 function submit_hpss(karst_resource, sda_resource, tar_task, cb) {
     request.post({
-        url: sca+"/sca/task",
+        url: sca+"/wf/task",
         json: true,
         headers: { 'Authorization': 'Bearer '+jwt },
         body: {
@@ -131,7 +128,7 @@ function submit_hpss(karst_resource, sda_resource, tar_task, cb) {
             resource_deps: [sda_resource._id],
             config: {
                 put: [
-                    {localdir:"../"+tar_task._id+"/backup.tar.gz", hpsspath:"backup/test.fits"}
+                    {localpath:"../"+tar_task._id+"/backup.tar.gz", hpsspath:"backup/"+tar_task._id+".tar.gz"}
                 ],
                 auth: {
                     username: sda_resource.config.username,
@@ -159,15 +156,18 @@ function submit_hpss(karst_resource, sda_resource, tar_task, cb) {
 
 ```
 
-First of all, we have "deps:" set to tar_task._id. It also has 
+First of all, we have "deps:" set to tar_task._id. Again, this tells SCA to execute this task after tar task
+is finished. 
 
-```
+
+```javascript
     resource_deps: [sda_resource._id]
 ```
 
-This tells SCA to stage the keytab required to access user's SDA resource on the submitted resource.
+This tells SCA to stage the SDA keytab on submitted resource (karst) so that sca-service-hpss can access user's SDA 
+account.
 
-Finally, inside the sca-service-hpss config, we have
+Inside the config:, we have
 
 ```json
     auth: {
@@ -176,8 +176,8 @@ Finally, inside the sca-service-hpss config, we have
     },
 ```
 
-This tells sca-service-hpss service (not SCA) how to find the keytab and username used to access user's hpss account.  This is a
-service specific behavior (not part of SCA). Some service may use environment parameters to receive such information.
+This tells sca-service-hpss service (not SCA) how to find the keytab and username used to access user's hpss account. 
+Since this is a service specific behavior, some service may use environment parameters instead to receive such information.
 
 Rest of the configuration should look similar to tar task. It sets instance_id / service name to submit, and 
 preferred_resource_id set to karst_resource. config tells where the files to be uploaded to HPSS should live. It also has
@@ -204,15 +204,17 @@ Once submitted,  you should receive the new task object via cb()
   create_date: '2016-06-27T18:32:23.309Z',
   resource_deps: [ '5760192fa6b6070a731af133' ],
   deps: [ '57717137b4a23255761fd729' ] }
-
 ```
 
 **Step 4:** Progress / task update
 
 Once you have submitted your task, you can query task update via sca cli by passing the task id
 
-```
+```bash
 $ sca task show 57717137b4a23255761fd72a
+```
+
+```json
 [
     {
         "_id": "57717137b4a23255761fd72a",
@@ -227,7 +229,7 @@ $ sca task show 57717137b4a23255761fd72a
         "config": {
             "put": [
                 {
-                    "localdir": "../57717137b4a23255761fd729/backup.tar.gz",
+                    "localpath": "../57717137b4a23255761fd729/backup.tar.gz",
                     "hpsspath": "backup/test.fits"
                 }
             ],
@@ -246,7 +248,6 @@ $ sca task show 57717137b4a23255761fd72a
         ]
     }
 ]
-
 ```
 
 "status_msg": "Waiting on dependency" means this hpss job is still waiting on the tar task to complete. 
@@ -255,7 +256,7 @@ You can query task update via sca API directly also.
 
 ```javascript
     request.get({
-        url: sca+"/sca/task",
+        url: sca+"/wf/task",
         json: true,
         qs: {where: JSON.stringify({_id: taskid})},
         headers: { 'Authorization': 'Bearer '+jwt }
@@ -264,21 +265,19 @@ You can query task update via sca API directly also.
         if(res.statusCode != 200) return common.show_error(res, body);
         console.log(JSON.stringify(body, null, 4));
     });
-
 ```
 
 You can poll task update periodically, or you can redirect user to SCA progress service. 
 
-> https://test.sca.iu.edu/progress/#/detail/_sca.<instance_id>.<task_id>
-
-Replace instance_id and task_id.
+`https://test.sca.iu.edu/progress/#/detail/_sca.<instance_id>.<task_id>`
+(replace instance_id and task_id)
 
 SCA progress service receives a detailed job / task progress information while task status / status_msg are updated
 less frequently.
 
 You can also create your own progress UI by polling progress detail from following API
 
-> https://test.sca.iu.edu/api/progress/status/_sca.<instance_id>.<task_id>?depth=2
+`https://test.sca.iu.edu/api/progress/status/_sca.<instance_id>.<task_id>?depth=2`
 
 ?depth=2 tells progress service how deep you'd like to query for nested details.
 
@@ -326,7 +325,7 @@ or via the API..
 
 ```javascript
     request.put({
-        url: sca+"/sca/task/rerun/"+task._id,
+        url: sca+"/wf/task/rerun/"+task._id,
         json: true,
         headers: { 'Authorization': 'Bearer '+jwt }
     }, function(err, res, body) {

@@ -11,8 +11,8 @@ title                    : "SCA"
 title_separator          : "-"
 name                     : "Scalable Computing Archive"
 description              : "SCA Homepage."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : #"https://soichi7.ppa.iu.edu/jekyllsca"
+baseurl                  : "/jekyllsca"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -129,7 +129,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
-highlighter: rouge
+#highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
@@ -144,7 +144,21 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  #enable_coderay: true
+
+  syntax_highlighter: rouge
+
+  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  # span, block element options fall back to global
+  #syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    #css_class: 'codehilite'
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    #span:
+    #  line_numbers: false
+    #block:
+    #  line_numbers: true
+    #  start_line: 1
 
 # Collections
 collections:
@@ -164,14 +178,14 @@ defaults:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+#paginate: 5 # amount of posts to show
+#paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
 gems:
-  - jekyll-paginate
+#  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -179,7 +193,7 @@ gems:
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
+#  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed

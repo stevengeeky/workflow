@@ -25,7 +25,11 @@ main:
 docs:
   - title: Tutorials
     children:
-      - title: "Backup local directory to HPSS"
+      - title: "Login"
+        url: /docs/tutorial/login/
+      - title: "Workflow Instance"
+        url: /docs/tutorial/instance/
+      - title: "Backup(tar/hpss)"
         url: /docs/tutorial/backup/
 #      - title: "Structure"
 #        url: /docs/structure/
