@@ -27,10 +27,16 @@ docs:
     children:
       - title: "Login"
         url: /docs/tutorial/login/
+      - title: "Workflow Resource"
+        url: /docs/tutorial/resource/
       - title: "Workflow Instance"
         url: /docs/tutorial/instance/
-      - title: "Backup(tar/hpss)"
+      - title: "Workflow Service"
+        url: /docs/tutorial/service/
+      - title: "Sample Workflow - Backup (tar/hpss)"
         url: /docs/tutorial/backup/
+      - title: "Sample Workflow - Backup (restore)"
+        url: /docs/tutorial/backup2/
 #      - title: "Structure"
 #        url: /docs/structure/
 #      - title: "Installation"

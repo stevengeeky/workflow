@@ -122,6 +122,7 @@ function submit_hpss(karst_resource, sda_resource, tar_task, cb) {
         headers: { 'Authorization': 'Bearer '+jwt },
         body: {
             instance_id: instance_id,
+            name: "backup", //used to help lookup later
             service: "soichih/sca-service-hpss",
             preferred_resource_id: karst_resource._id, //not really needed but in case there are more than 1..
             deps: [tar_task._id],
@@ -224,6 +225,7 @@ $ sca task show 57717137b4a23255761fd72a
         "progress_key": "_sca.5716ae31d43e9a2e1649e927.57717137b4a23255761fd72a",
         "user_id": "1",
         "instance_id": "5716ae31d43e9a2e1649e927",
+        "name": "backup",
         "service": "soichih/sca-service-hpss",
         "preferred_resource_id": "575ee815b62439c67b693b85",
         "config": {
@@ -260,10 +262,10 @@ You can query task update via sca API directly also.
         json: true,
         qs: {where: JSON.stringify({_id: taskid})},
         headers: { 'Authorization': 'Bearer '+jwt }
-    }, function(err, res, body) {
+    }, function(err, res, tasks) {
         if(err) throw err;
-        if(res.statusCode != 200) return common.show_error(res, body);
-        console.log(JSON.stringify(body, null, 4));
+        if(res.statusCode != 200) return common.show_error(res, tasks);
+        console.log(JSON.stringify(tasks, null, 4));
     });
 ```
 

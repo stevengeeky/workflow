@@ -13,7 +13,7 @@ directory to store various tasks that are related. Tasks inside workflow instanc
 
 To create a new workflow instance, do something like following.
 
-```
+```javascript
 var request = require('request');
 var fs = require('fs');
 var sca = "https://test.sca.iu.edu/api";
@@ -43,12 +43,12 @@ workflow_id is set to sca-wf-backup in order to indicate that this instance belo
 
 You can query existing instances like so..
 
-```
+```javascript
 request.get({
     url: sca+"/wf/instance",
     json: true,
-    headers: auth_headers,
-    qs: {where: JSON.stringify({workflow_id: 'sca-wf-backup'})},
+    headers: { 'Authorization': 'Bearer '+jwt },
+    qs: {find: JSON.stringify({workflow_id: 'sca-wf-backup'})},
 }, function(err, res, instances) {
     if(err) throw err;
     if(res.statusCode != 200) throw new Error(instances);
@@ -57,4 +57,6 @@ request.get({
 });
 ```
 
+Common usecase is that, when your application starts up, it first look for a workflow instance with some configured
+workflow_id use it. If user doesn't have any instance under that workflow_id, go ahead and create it. 
 

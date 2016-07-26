@@ -1,7 +1,7 @@
 ---
 title: "Loging into SCA"
 permalink: /docs/tutorial/login
-excerpt: "local authentication"
+excerpt: "ldap authentication"
 ---
 
 {% include base_path %}
@@ -13,6 +13,13 @@ obtain it from SCA authentication APIs.
 
 Following sample code does this by making username / password based authentication request.
 
+```
+module load nodejs
+npm install request
+npm install jsonwebtoken
+
+```
+
 ```javascript
 var request = require('request');
 var fs = require('fs');
@@ -21,18 +28,24 @@ var jwt = require('jsonwebtoken');
 //update to point to your sca instance
 var sca = "https://test.sca.iu.edu/api";
 
-function login(cb) {
-    request.post({
-        url: sca+"/auth/local/auth", 
-        json: true,
-        body: {username: "username", password: "password"}
-    }, function(err, res, body) {
-        if(err) throw err;
-        if(res.statusCode != 200) return common.show_error(res, body);
-        var token = jwt.decode(body.jwt);
-        console.dir(token);
-    });
-}
+request.post({
+    url: sca+"/auth/ldap/auth",
+    json: true,
+    body: {username: "hayashis", password: process.env.PASSWORD}
+}, function(err, res, body) {
+    if(err) throw err;
+    if(res.statusCode != 200) throw res;
+    var token = jwt.decode(body.jwt);
+    console.dir(token);
+    fs.writeFileSync("token.jwt", body.jwt);
+});
+
+```
+
+You can execute this script like so
+
+```
+$ PASSWORD=yourpassword node login.js
 ```
 
 If user already have the JWT token, a good way to validate the token is to request a refresh of the JWT token
@@ -46,7 +59,7 @@ function login(cb) {
         body: {username: "username", password: "password"}
     }, function(err, res, body) {
         if(err) throw err;
-        if(res.statusCode != 200) return common.show_error(res, body);
+        if(res.statusCode != 200) throw res;
         var token = jwt.decode(body.jwt);
         console.dir(token);
     });
