@@ -12,19 +12,19 @@ List of papers, posters, etc. about Trident software suite based Scalable Comput
 
 **1.**  Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R.; Henschel, R. 2016. Trident: Scalable Compute Archive, and Visualuzation/Analysiss Systems. <em>In Process.</em>. Proc. SPIE 9913-53, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
 
- - Online Abstract, Full Paper [PDF - coming soon]
+ - <a href="" target="_new">Online Abstract (coming soon)</a>, <a href="https://iu.box.com/v/SPIE2016-TridentPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-TridentTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
 **2.**  Young, M.D.; Hayashi, S.; Gopu, A.; Kotulla, R.; 2016. StarDock: shipping customized computing environments to the data. <em>In Process.</em>. Proc. SPIE 9913-44, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
 
- - Online Abstract, Full Paper [PDF - coming soon]
+  - <a href="" target="_new">Online Abstract (coming soon)</a>, <a href="https://iu.box.com/v/SPIE2016-StarDockPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-StarDockTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
 **3.**  Kotulla, R.; Gopu, A.; Hayashi, S.; 2016. Fast and flexible big data processing at LSST data rates using existing, shared-use hardware. <em>In Process.</em>. Proc. SPIE 9913-67, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
 
- - Online Abstract, Full Paper [PDF - coming soon]
+ - <a href="" target="_new">Online Abstract (coming soon)</a>, <a href="https://iu.box.com/v/SPIE2016-RabbitQRPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-RabbitQRTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
 **4.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X: new and improved image explorer for astronomical images and beyond. <em>In Process.</em>. Proc. SPIE 9913-169, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
 
- - Online Abstract, Full Paper [PDF - coming soon]
+ - <a href="" target="_new">Online Abstract (coming soon)</a>, <a href="https://iu.box.com/v/SPIE2016-ImageXPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-ImageXPoster" target="_new">Conference Poster [PDF]</a>
 
 ## One Degree Imager - Portal, Pipeline, and Archive
 
