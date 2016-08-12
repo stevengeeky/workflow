@@ -10,21 +10,21 @@ permalink: /publications
 
 List of papers, posters, etc. about Trident software suite based Scalable Compute Archive and Analysis Systems including the ODI Portal, Pipeline, and Archive.
 
-**1.**  Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R.; Henschel, R. 2016. Trident: Scalable Compute Archive, and Visualuzation/Analysiss Systems. <em>In Process.</em>. Proc. SPIE 9913-53, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
+**1.**  Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R.; Henschel, R. 2016. Trident: Scalable Compute Archive, and Visualuzation/Analysiss Systems. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99131H (August 8, 2016); doi:10.1117/12.2233111; http://dx.doi.org/10.1117/12.2233111
 
- - <a href="" target="_new">Online Abstract (coming soon)</a>, <a href="https://iu.box.com/v/SPIE2016-TridentPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-TridentTalk" target="_new">Conference Presentation Slides [PDF]</a>
+ - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2543615" target="_new">Online Abstract</a>, <a href="https://iu.box.com/v/SPIE2016-TridentPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-TridentTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**2.**  Young, M.D.; Hayashi, S.; Gopu, A.; Kotulla, R.; 2016. StarDock: shipping customized computing environments to the data. <em>In Process.</em>. Proc. SPIE 9913-44, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
+**2.**  Young, M.D.; Hayashi, S.; Gopu, A.; Kotulla, R.; 2016. StarDock: shipping customized computing environments to the data. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 991318 (August 8, 2016); doi:10.1117/12.2233081
 
-  - <a href="" target="_new">Online Abstract (coming soon)</a>, <a href="https://iu.box.com/v/SPIE2016-StarDockPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-StarDockTalk" target="_new">Conference Presentation Slides [PDF]</a>
+  - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2543611" target="_new">Online Abstract</a>, <a href="https://iu.box.com/v/SPIE2016-StarDockPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-StarDockTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**3.**  Kotulla, R.; Gopu, A.; Hayashi, S.; 2016. Fast and flexible big data processing at LSST data rates using existing, shared-use hardware. <em>In Process.</em>. Proc. SPIE 9913-67, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
+**3.**  Kotulla, R.; Gopu, A.; Hayashi, S.; 2016. Fast and flexible big data processing at LSST data rates using existing, shared-use hardware. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99131U (August 8, 2016); doi:10.1117/12.2233527; http://dx.doi.org/10.1117/12.2233527
 
- - <a href="" target="_new">Online Abstract (coming soon)</a>, <a href="https://iu.box.com/v/SPIE2016-RabbitQRPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-RabbitQRTalk" target="_new">Conference Presentation Slides [PDF]</a>
+ - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2543619" target="_new">Online Abstract</a>, <a href="https://iu.box.com/v/SPIE2016-RabbitQRPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-RabbitQRTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**4.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X: new and improved image explorer for astronomical images and beyond. <em>In Process.</em>. Proc. SPIE 9913-169, Software and Cyberinfrastructure for Astronomy IV, TBD (July 2016); doi:TBD
+**4.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X: new and improved image explorer for astronomical images and beyond. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99134E (August 8, 2016); doi:10.1117/12.2233425; http://dx.doi.org/10.1117/12.2233425
 
- - <a href="" target="_new">Online Abstract (coming soon)</a>, <a href="https://iu.box.com/v/SPIE2016-ImageXPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-ImageXPoster" target="_new">Conference Poster [PDF]</a>
+ - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2543644" target="_new">Online Abstract</a>, <a href="https://iu.box.com/v/SPIE2016-ImageXPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-ImageXPoster" target="_new">Conference Poster [PDF]</a>
 
 ## One Degree Imager - Portal, Pipeline, and Archive
 
