@@ -4,9 +4,10 @@ permalink: /docs/tutorial/login
 excerpt: "ldap authentication"
 ---
 
+
 {% include base_path %}
 
-For SCA Authentication [API Doc](https://test.sca.iu.edu/auth/apidoc)
+> Using APIs provided by [SCA Auth Service API](https://test.sca.iu.edu/auth/apidoc)
 
 Most SCA REST APIs requires user to pass JWT token as part of the header. If user doesn't have it, they need to 
 obtain it from SCA authentication APIs.

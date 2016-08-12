@@ -6,7 +6,7 @@ excerpt: "Register / update resource entries"
 
 {% include base_path %}
 
-> For complete API guide, see https://test.sca.iu.edu/wf/apidoc
+> Using APIs provided by [SCA Workflow Service API](https://test.sca.iu.edu/wf/apidoc)
 
 Before user can submit tasks, they need a resource (PBS cluster, or any machine that user has SSH access) 
 where they can submit the task. User needs to register resource once - normally during the account registration phase.

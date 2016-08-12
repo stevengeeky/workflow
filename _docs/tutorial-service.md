@@ -6,6 +6,8 @@ excerpt: "Create and register SCA service"
 
 {% include base_path %}
 
+> Using APIs provided by [SCA Workflow Service API](https://test.sca.iu.edu/wf/apidoc)
+
 Services are any software that is executed by SCA workflow service on a resource where user has ssh access to. 
 Service can be a bash script to submit a PBS job on a local cluster, or executable to run on specific VM, or even 
 run a docker container on a docker host.

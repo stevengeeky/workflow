@@ -6,7 +6,7 @@ excerpt: "Create / query new workflow instance"
 
 {% include base_path %}
 
-For SCA Workflow [API Doc](https://test.sca.iu.edu/wf/apidoc)
+> Using APIs provided by [SCA Workflow Service API](https://test.sca.iu.edu/wf/apidoc)
 
 Before you can start submitting a task, you will need a workflow instance to store the task in. You can think of workflow instance as a 
 directory to store various tasks that are related. Tasks inside workflow instance can share data products, and helps organize the workflow.
