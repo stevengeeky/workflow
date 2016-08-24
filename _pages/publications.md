@@ -10,37 +10,38 @@ permalink: /publications
 
 List of papers, posters, etc. about Trident software suite based Scalable Compute Archive and Analysis Systems including the ODI Portal, Pipeline, and Archive.
 
-**1.**  Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R.; Henschel, R. 2016. Trident: Scalable Compute Archive, and Visualuzation/Analysiss Systems. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99131H (August 8, 2016); doi:10.1117/12.2233111; http://dx.doi.org/10.1117/12.2233111
+**1.**  Gopu, A.; Hayashi, S.; Young, M. D.; Kotulla, R.; Henschel, R. 2016. Trident: Scalable Compute Archive, and Visualuzation/Analysiss Systems. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99131H (August 8, 2016); <a href='http://dx.doi.org/10.1117/12.2233111' target='_blank'>doi:10.1117/12.2233111</a>
 
  - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2543615" target="_new">Online Abstract</a>, <a href="https://iu.box.com/v/SPIE2016-TridentPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-TridentTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**2.**  Young, M.D.; Hayashi, S.; Gopu, A.; Kotulla, R.; 2016. StarDock: shipping customized computing environments to the data. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 991318 (August 8, 2016); doi:10.1117/12.2233081
+**2.**  Young, M.D.; Hayashi, S.; Gopu, A.; Kotulla, R.; 2016. StarDock: shipping customized computing environments to the data. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 991318 (August 8, 2016); <a href='http://dx.doi.org/10.1117/12.2233081' target='_blank'>doi:10.1117/12.2233081</a>
 
   - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2543611" target="_new">Online Abstract</a>, <a href="https://iu.box.com/v/SPIE2016-StarDockPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-StarDockTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**3.**  Kotulla, R.; Gopu, A.; Hayashi, S.; 2016. Fast and flexible big data processing at LSST data rates using existing, shared-use hardware. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99131U (August 8, 2016); doi:10.1117/12.2233527; http://dx.doi.org/10.1117/12.2233527
+**3.**  Kotulla, R.; Gopu, A.; Hayashi, S.; 2016. Fast and flexible big data processing at LSST data rates using existing, shared-use hardware. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99131U (August 8, 2016); <a href='http://dx.doi.org/10.1117/12.2233527' target='_blank'>doi:10.1117/12.2233527</a>
 
  - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2543619" target="_new">Online Abstract</a>, <a href="https://iu.box.com/v/SPIE2016-RabbitQRPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-RabbitQRTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**4.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X: new and improved image explorer for astronomical images and beyond. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99134E (August 8, 2016); doi:10.1117/12.2233425; http://dx.doi.org/10.1117/12.2233425
+**4.** Hayashi, S.; Gopu, A.; Kotulla, R., Young, M.D.; 2016. Image X: new and improved image explorer for astronomical images and beyond. Proc. SPIE 9913, Software and Cyberinfrastructure for Astronomy III, 99134E (August 8, 2016); 
+<a href='http://dx.doi.org/10.1117/12.2233425' target='_blank'>doi:10.1117/12.2233425</a>; 
 
  - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2543644" target="_new">Online Abstract</a>, <a href="https://iu.box.com/v/SPIE2016-ImageXPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/v/SPIE2016-ImageXPoster" target="_new">Conference Poster [PDF]</a>
 
 ## One Degree Imager - Portal, Pipeline, and Archive
 
-**1.** Hayashi, S.; Gopu, A.; Young, M. D.; Kotulla, R. 2014. PPA Stack: User Driven Image Stacking for ODI data and beyond via a Highly Customizable Web Interface. <em>In Process.</em> Proceedings of The Astronomical Society of the Pacific (ASP) TBD, article number TBD
+**1.** Hayashi, S.; Gopu, A.; Young, M. D.; Kotulla, R. 2014. PPA Stack: User Driven Image Stacking for ODI data and beyond via a Highly Customizable Web Interface. Proceedings of The Astronomical Society of the Pacific (ASP) 09/2015, p.421 <a href='http://adsabs.harvard.edu/abs/2015ASPC..495..421H' target='_blank'>Citation here</a>.
 
  - <a href="http://adass2014.org/seeabstract_en.php?id=46" target="_new">Online Abstract</a>, <a href="https://iu.app.box.com/ADASS2014-StackingPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.app.box.com/ADASS2014-StackingTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**2.** Gopu, A.; Kotulla, R.; Young, M. D.; Hayashi, S.; Harbeck, D.; Liu, W.; Henschel, R. 2014. Rapid Large Scale Reprocessing of the ODI archive using the QuickReduce Pipeline. In Process. Proceedings of The Astronomical Society of the Pacific (ASP) TBD, article number TBD
+**2.** Gopu, A.; Kotulla, R.; Young, M. D.; Hayashi, S.; Harbeck, D.; Liu, W.; Henschel, R. 2014. Rapid Large Scale Reprocessing of the ODI archive using the QuickReduce Pipeline. Proceedings of The Astronomical Society of the Pacific (ASP) 09/2015, p.53 <a href='http://adsabs.harvard.edu/abs/2015ASPC..495...53G' target='_blank'>Citation here</a>.
 
  - <a href="http://adass2014.org/seeabstract_en.php?id=44" target="_new">Online Abstract (including citation download)</a>, <a href="https://iu.app.box.com/ADASS2014-QRPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.app.box.com/ADASS2014-QRTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**3.** Young, M. D.; Hayashi, S.; Gopu, A.; Kotulla, R.; Harbeck, D.; Liu, W. 2014. Operational Support for Instrument Stability through ODI-PPA Metadata Visualization and Analysis. <em>In Process.</em> Proceedings of The Astronomical Society of the Pacific (ASP) TBD, article number TBD
+**3.** Young, M. D.; Hayashi, S.; Gopu, A.; Kotulla, R.; Harbeck, D.; Liu, W. 2014. Operational Support for Instrument Stability through ODI-PPA Metadata Visualization and Analysis. Proceedings of The Astronomical Society of the Pacific (ASP) 09/2015, p.181 <a href='http://adsabs.harvard.edu/abs/2015ASPC..495..181Y' target='_blank'>Citation here</a>.
 
  - <a href="http://adass2014.org/seeabstract_en.php?id=41" target="_new">Online Abstract (including citation download)</a>, <a href="https://iu.app.box.com/ADASS2014-ChartsPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.app.box.com/ADASS2014-ChartsPoster" target="_new">Conference Poster [PDF]</a>
 
-**4.** Liu, W.; Gopu, A.; Young, M. D.; Hayashi, S.; Kotulla, R.; Harbeck, D.; Swaters, R.; Valdes, F. 2014. Pipeline Operator Workflow for the ODI-PPA: A Novel Approach for Processing and Validating User Data. <em>In Process.</em> Procedings of The Astronomical Society of the Pacific (ASP) TBD, article number TBD
+**4.** Liu, W.; Gopu, A.; Young, M. D.; Hayashi, S.; Kotulla, R.; Harbeck, D.; Swaters, R.; Valdes, F. 2014. Pipeline Operator Workflow for the ODI-PPA: A Novel Approach for Processing and Validating User Data. Proceedings of The Astronomical Society of the Pacific (ASP) 09/2015, p.421 <a href='' target='_blank'>Citation here - missing URL</a>.
 
  - <a href="http://adass2014.org/seeabstract_en.php?id=100" target="_new">Online Abstract (including citation download)</a>, <a href="https://iu.app.box.com/ADASS2014-OperatorPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.app.box.com/ADASS2014-OperatorPoster" target="_new">Conference Poster [PDF]</a>
 
@@ -52,15 +53,15 @@ List of papers, posters, etc. about Trident software suite based Scalable Comput
 
  - <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1890874" target="_new">Online Abstract (including citation download)</a>, <a href="https://iu.box.com/SPIE2014-QRPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/SPIE2014-QRPoster" target="_new">Conference Poster [PDF]</a>
 
-**7.** Gopu, A.; Hayashi, S.; Young, M. D. 2013. Image Explorer: Astronomical Image Analysis on an HTML5-based Web Application. In ASP Conference Series <a href="http://www.aspbooks.org/a/volumes/table_of_contents/?book_id=553" target="_new">Volume 485</a>, Page 417, Astronomical Data Analysis Software and Systems XXIII.
+**7.** Gopu, A.; Hayashi, S.; Young, M. D. 2013. Image Explorer: Astronomical Image Analysis on an HTML5-based Web Application. In ASP Conference Series <a href="http://www.aspbooks.org/a/volumes/table_of_contents/?book_id=553" target="_new">Volume 485</a>, Page 417, Astronomical Data Analysis Software and Systems XXIII; <a href='http://adsabs.harvard.edu/abs/2014ASPC..485..417G' target='_blank'>Citation here</a>
 
  - <a href="http://www.aspbooks.org/a/volumes/article_details/?paper_id=36264" target="_new">Online Abstract</a>, <a href="https://iu.box.com/ADASS2013-ImgExpPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/ADASS2013-ImgSrcExpTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**8.** Young, M. D.; Gopu, A.; Hayashi, S. 2013. Source Explorer: Towards web-browser based tools for astronomical source visualization and analysis. In ASP Conference Series <a href="http://www.aspbooks.org/a/volumes/table_of_contents/?book_id=553" target="_new">Volume 485</a>, Page 269, Astronomical Data Analysis Software and Systems XXIII.
+**8.** Young, M. D.; Gopu, A.; Hayashi, S. 2013. Source Explorer: Towards web-browser based tools for astronomical source visualization and analysis. In ASP Conference Series <a href="http://www.aspbooks.org/a/volumes/table_of_contents/?book_id=553" target="_new">Volume 485</a>, Page 269, Astronomical Data Analysis Software and Systems XXIII; <a href='http://adsabs.harvard.edu/abs/2014ASPC..485..269Y' target='_blank'>Citation here</a>
 
  - <a href="http://www.aspbooks.org/a/volumes/article_details/?paper_id=36229" target="_new">Online Abstract</a>, <a href="https://iu.box.com/ADASS2013-SrcExpPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/ADASS2013-ImgSrcExpTalk" target="_new">Conference Presentation Slides [PDF]</a>
 
-**9.** Young, M. D.; Gopu, A.; Hayashi, S.; Cox, J. A. 2012. FRIAA: A FRamework for Web-based Interactive Astronomy Analysis using AMQP Messaging. In ASP Conference Series <a href="http://www.aspbooks.org/a/volumes/table_of_contents/475" target="_new">Volume 475</a>, Page 337, Astronomical Data Analysis Software and Systems XXII
+**9.** Young, M. D.; Gopu, A.; Hayashi, S.; Cox, J. A. 2012. FRIAA: A FRamework for Web-based Interactive Astronomy Analysis using AMQP Messaging. In ASP Conference Series <a href="http://www.aspbooks.org/a/volumes/table_of_contents/475" target="_new">Volume 475</a>, Page 337, Astronomical Data Analysis Software and Systems XXII; <a href='http://adsabs.harvard.edu/abs/2013ASPC..475..337Y' target='_blank'>Citation here</a>
 
  - <a href="http://www.aspbooks.org/a/volumes/article_details/?paper_id=35634" target="_new">Online Abstract</a>, <a href="https://iu.box.com/ADASS2012-FRIAAPaper" target="_new">Full Paper [PDF]</a>, <a href="https://iu.box.com/ADASS2012-FRIAATalk" target="_new">Conference Presentation Slides [PDF]</a>
 
