@@ -1,5 +1,5 @@
 ---
-title: "SCA Documentations"
+title: "SCA Documentation"
 permalink: /docs/
 ---
 

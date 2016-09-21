@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "Scalable Computing Archive"
 description              : "SCA Homepage."
 url                      : #"https://soichi7.ppa.iu.edu/jekyllsca"
-baseurl                  : "/jekyllsca"
+#baseurl                  : "/home"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
