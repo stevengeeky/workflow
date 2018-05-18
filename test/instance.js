@@ -29,10 +29,10 @@ describe('/instance', function() {
         .set('Authorization', 'Bearer '+userjwt)
         .set('Accept', 'application/json')
         .send({
-            workflow_id: "test",    
-            user_id: "test_service",        
-            name: "test",   
-            desc: "test desc",      
+            group_id: 1234,
+            user_id: "test_user",
+            name: "test",
+            desc: "test desc",
             config: {
                 what: "ever"
             }
@@ -41,10 +41,10 @@ describe('/instance', function() {
         .end(function(err, res) {
             if(err) return done(err);
             instance = res.body;
-            console.log("RESPONSE: ", JSON.stringify(instance));
-            assert(instance.workflow_id == "test");
+            assert(instance.group_id == 1234);
             assert(instance.name == "test");
             assert(instance.desc == "test desc");
+            assert(instance.config.what == "ever");
             done();
         });
     });
@@ -55,10 +55,10 @@ describe('/instance', function() {
         //.set('Authorization', 'Bearer '+config.sca.jwt)
         .set('Accept', 'application/json')
         .send({
-            workflow_id: "test",    
-            user_id: "hacker", //should be ignored!
-            name: "test 2", 
-            desc: "test desc 2",    
+            group_id: 4567,
+            user_id: "hacker",
+            name: "test 2",
+            desc: "test desc 2",
             config: {
                 what: "ever"
             }
@@ -68,10 +68,11 @@ describe('/instance', function() {
             if(err) return done(err);
             let instance2 = res.body;
             //console.dir(instance);
-            assert(instance2.workflow_id == "test");
+            assert(instance2.group_id == 4567);
             assert(instance2.name == "test 2");
             assert(instance2.desc == "test desc 2");
-            assert(instance2.user_id == "test_user"); //shouldn't be hacker!
+            assert(instance2.user_id == "test_user");
+            assert(instance2.config.what == "ever");
             done();
         });
     });
@@ -82,7 +83,7 @@ describe('/instance', function() {
         .set('Authorization', 'Bearer '+config.sca.jwt)
         .set('Accept', 'application/json')
         .send({
-            workflow_id: "test",    
+            group_id: 0x89ab,
             name: "admin test instance", 
             config: {
                 what: "ever"
@@ -92,7 +93,7 @@ describe('/instance', function() {
         .end(function(err, res) {
             if(err) return done(err);
             let instance3 = res.body;
-            assert(instance3.workflow_id == "test");
+            assert(instance3.group_id == 0x89ab);
             assert(instance3.name == "admin test instance");
             done();
         });
