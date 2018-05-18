@@ -41,7 +41,7 @@ describe('/instance', function() {
         .end(function(err, res) {
             if(err) return done(err);
             instance = res.body;
-            console.log("RESPONSE: ", res);
+            console.log("RESPONSE: ", JSON.stringify(instance));
             assert(instance.workflow_id == "test");
             assert(instance.name == "test");
             assert(instance.desc == "test desc");
